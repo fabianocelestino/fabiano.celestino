@@ -1,0 +1,39 @@
+dsads
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="UTF-8">
+<script type="text/JavaScript">
+function up(lstr){ // converte minusculas em maiusculas
+var str=lstr.value; //obtem o valor
+lstr.value=str.toUpperCase(); //converte as strings e retorna ao campo
+}
+function down(lstr){ // converte maiusculas em minusculas
+var str=lstr.value; //obtem o valor
+lstr.value=str.toLowerCase(); //converte as strings e retorna ao campo
+}
+</script>
+</head>
+<body>
+<form name="form" method="POST" enctype="multipart/form-data">
+<table width="100%" cellpadding="2" cellspacing="2" bgcolor="#F0F0F0">
+<tr>
+<th style="width: 50%">
+Converter Minúscula para Maiúscula
+</th>
+<th style="width: 50%">
+Converter Maiúscula para Minúscula
+</th>
+</tr>
+<tr>
+<td>
+<input type="text" name="stringup" style="width: 90%" onkeyup="up(this)">
+</td>
+<td>
+<input type="text" name="stringdown" style="width: 90%" onkeyup="down(this)">
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>
